@@ -1,0 +1,234 @@
+.header-blue {
+    background-color: #22546e;
+    padding: 10px 0px;
+    text-align: center;
+    position: relative;
+    h1 {
+        color: #fff;
+        font-family: "LatoLight";
+        font-size: 25px;
+        margin: 0;
+    }
+}
+
+.roi-calc{
+    padding-top: 180px;
+    padding-bottom: 200px;
+    .form-group{
+        margin-bottom: 30px;
+    }
+    .form-group.bottom-margin{
+        margin-bottom: 65px;
+    }
+
+    .form-control{
+        border-radius: 0px;
+        box-shadow:none;
+        transition:none;
+        height: 45px;
+        font-size: 17px;
+        font-weight: 200;
+        width: 90%;
+    }
+    .form-control:focus {
+      border-color: #999;
+
+    }
+    .form-control:-moz-placeholder {
+      color: #b1b1b1;
+    }
+    .form-control::-moz-placeholder {
+      color: #b1b1b1;
+      opacity: 1;
+    }
+    .form-control:-ms-input-placeholder {
+      color: #b1b1b1;
+    }
+    .form-control::-webkit-input-placeholder {
+      color: #b1b1b1;
+    }
+}
+
+.btn {
+    &.btn-calc {
+        border: 1px solid #ff7800;
+        background: transparent;
+        color: #ff7800;
+        padding: 10px 35px;
+        border-radius: 40px;
+        text-transform: uppercase;
+        font-size: 15px;
+        margin-left: 50px;
+        &:hover {
+            color: #fff;
+            background-color: #ff7800;
+        }
+    }
+    &.btn-clear {
+        border: 1px solid #c2c2c2;
+        background: transparent;
+        color: #c2c2c2;
+        padding: 10px 35px;
+        border-radius: 40px;
+        text-transform: uppercase;
+        font-size: 15px;
+        margin-left: 50px;
+        &:hover {
+            color: #fff;
+            background-color: #c2c2c2;
+        }
+    }
+}
+
+.loss,
+.cost,
+.savings {
+    color: #fff;
+    margin-bottom: 30px;
+    padding: 10px;
+    .daily-loss,
+    .daily-cost,
+    .daily-savings {
+        p {
+            margin: 0;
+        }
+        span {
+            display: block;
+            margin-left: 0;
+            font-size: 50px;
+            font-weight: bold;
+        }
+    }
+    .right {
+        float: right;
+        width: 60%;
+    }
+    .monthly-loss,
+    .yearly-loss,
+    .monthly-cost,
+    .yearly-cost,
+    .monthly-savings,
+    .yearly-savings{
+        padding: 15px 10px;
+        p {
+            display: inline-block;
+            vertical-align: middle;
+            float: right;
+            font-weight: bold;
+            font-size: 27px;
+            margin-bottom: 0;
+        }
+    }
+}
+.loss {
+    background-color:#303030;
+}
+.cost {
+    background-color:#30a1dd;
+}
+.savings {
+    background-color:#ff7900;
+}
+
+.roi-save {
+    background-color: #ff7900;
+    text-align: center;
+    font-family: "LatoLight";
+    padding: 50px 0px;
+    position: relative;
+    h1 {
+        color: #fff;
+        margin: 0;
+    }
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 15px solid;
+        margin-left: -15px;
+        border-color: #ff7900 transparent transparent transparent;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .roi-calc {
+        padding-top: 125px;
+        padding-bottom: 150px;
+        .container {
+            padding: 0 31px;
+        }
+        .form-left {
+            padding-bottom: 125px;
+        }
+        .calculations {
+            div:first-child {
+                margin-top: 0;
+            }
+        }
+        .cost, .loss, .savings {
+            min-height: 120px;
+            & > div {
+                width: 50%;
+                float: left;
+            }
+        }
+        .form-control {
+            width: 100%;
+        }
+        .btn.btn-calc {
+            margin-left: 180px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .roi-calc {
+        .container {
+            padding: 0 15px;
+        }
+        .cost, .loss, .savings {
+            div[class^="daily-"] {
+                p, span {
+                    margin-left: 50px;
+                }
+            }
+        }
+        .btn.btn-calc {
+            margin-left: 50px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .roi-calc {
+        .container {
+            padding: 0 15px;
+        }
+        .cost, .loss, .savings {
+            div[class^="daily-"] {
+                p, span {
+                    margin-left: 0;
+                    text-align: center;
+                }
+            }
+        }
+        .btn.btn-calc {
+            margin-left: 0;
+        }
+        .btn.btn-clear {
+            margin-left: 5px;
+        }
+        .cost, .loss, .savings {
+            & > div {
+                width: 100%;
+                float: none;
+            }
+        }
+    }
+}

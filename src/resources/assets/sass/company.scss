@@ -1,0 +1,422 @@
+#headerwrap-company {
+    background: url("../img/company/company-bg.jpg");
+    text-align: center;
+    background-attachment: relative;
+    width: 100%;
+    height: auto;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    h1 {
+        padding-top: 155px;
+        color: #555;
+        letter-spacing: 2px;
+        font-size: 68px;
+        font-family: "ProximaNovaLight"
+    }
+    p {
+        margin-top: 18px;
+        margin-bottom: 10px;
+        color: #777;
+        text-align: center;
+        font-size: 20px;
+        font-family: "ProximaNovaLight"
+    }
+}
+.company-sectinone {
+    .container-fluid {
+        text-align: center;
+        // overflow: visible;
+        height: 450px;
+    }
+}
+.mission-sectionone {
+    .container-fluid {
+        height: 599px;
+        img {
+            margin-top: 0;
+        }
+    }
+}
+
+.technology, .believe {
+    text-align: center;
+    padding-top: 115px;
+    padding-bottom: 150px;
+    h1 {
+        margin-top: 0;
+        margin-bottom: 50px;
+        font-size: 40px;
+    }
+    p {
+        margin-bottom: 20px;
+        font-size: 22px;
+        line-height: 1.5;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.header-blue-company {
+    background-color: #22546e;
+    padding: 10px 0px;
+    text-align: center;
+    h1 {
+        color: #fff;
+        font-family: "LatoLight";
+        font-size: 25px;
+        margin: 0;
+    }
+}
+
+.border-divider-orange, .partners {
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        margin-left: -15px;
+        width: 0;
+        height: 0;
+        border: 15px solid;
+    }
+}
+
+.border-divider-orange {
+    position: relative;
+    padding: 8px;
+    background-color: #fff;
+    margin: 0;
+    &:after {
+        border-color: #ff7800 transparent transparent transparent;
+        top: 0%;
+    }
+}
+
+.believe {
+    margin-top: -18px;
+    background-color: #ff7800;
+    text-align: center;
+    color: #fff;
+    h1 {
+        color: #fff;
+    }
+}
+.founded {
+    margin-top: 0;
+    padding-top: 245px;
+    position: relative;
+    text-align: center;
+    font-family: "ProximaNovaLight";
+    color:#39404e;
+    h1 {
+        font-size: 120px;
+        margin-top: 110px;
+        margin-bottom: 0;
+        span.special {
+        display: inline-block;
+        position:absolute;
+        top: 110px;
+        margin-left: 5px;
+        color: #ff7800;
+        font-family: "ProximaNovaLight";
+        font-size: 80px;
+        }
+    }
+    h2 {
+        margin: 50px 0px 130px 0px;
+    }
+    p.muted {
+        color:#a6a6a6;
+        margin:0;
+        margin: 0px 0px 120px 0px;
+    }
+    hr {
+        margin: 0;
+    }
+}
+.partners {
+    text-align: center;
+    position: relative;
+    box-shadow: inset 0 -100px 120px -60px #e8e8e9;
+    padding-bottom: 100px;
+    h1 {
+        margin-top: 250px;
+        margin-bottom: 10px;
+    }
+    p {
+        margin-bottom: 200px;
+    }
+    .partners-partner {
+        width: 20%;
+        float: left;
+        height: 91px;
+    }
+    &:after {
+        top: 100%;
+        border-color: #e8e8e9 transparent transparent transparent;
+    }
+}
+
+#contact {
+    text-align: right;
+    padding-top: 100px;
+    padding-bottom: 65px;
+    h1 {
+        color: #39404e;
+        font-size: 43px;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+    h4 {
+        margin-bottom: 90px;
+        font-size: 23px;
+    }
+    .container {
+        max-width: 1050px;
+    }
+    .form-control {
+        border: 1px solid transparent;
+        border-top: 1px solid #d7d7d7;
+        border-radius: 0px;
+        height: 47px;
+        width: 455px;
+        font-size: 20px;
+        margin-left: 0;
+        margin-bottom: 65px;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        &:focus {
+            border-color: transparent;
+            border-top: 1px solid #888;
+            outline: 0;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+    }
+    .form-group {
+        margin-right: 0;
+    }
+    .control-group {
+        
+    }
+    .help-block {
+        color: red;
+        ul {
+            text-align: left;
+        }
+    }
+    textarea.form-control {
+        height: 225px;
+        width: 490px;
+        border: 1px solid #d7d7d7;
+        margin-left: 0;
+        margin-bottom: 0;
+        &:focus {
+            height: 225px;
+            border: 1px solid #888;
+        }
+    }
+    label {
+        font-size: 20px;
+        clear: both;
+        float: left;
+        color: #999;
+        font-weight: normal;
+        line-height: 30px;
+        margin-top: 6px;
+    }
+    button.btn-submit {
+        margin-top: 0;
+        padding: 10px 80px;
+        background-color: #fff;
+        color: #ff7800;
+        border-color: #ff7800;
+        text-transform: uppercase;
+        border-radius: 40px;
+        font-size: 19px;
+        margin-left: 400px;
+        &:hover {
+            color: #fff;
+            background-color: #ff7800;
+        }
+    }
+    .contact-address {
+        float: right;
+        text-align: right;
+        img {
+            display: inline-block;
+        }
+        p {
+            margin: 10px 0;
+        }
+    }
+    &.col-md-4 {
+        padding-top: 50px;
+    }
+}
+
+#map-canvas {
+    width: 100%;
+    height: 400px;
+    border-top: 10px solid rgba(9, 9, 9, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .company-sectinone, .mission-sectionone {
+        img {
+            left: 50%;
+            position: relative;
+        }
+    }
+    .company-sectinone {
+        .container-fluid {
+            height: 524px;
+            img {
+                margin-left: -945px;
+            }
+        }
+    }
+    .technology, .believe {
+        .container {
+            padding: 0 50px;
+        }
+    }
+    .mission-sectionone {
+        .container-fluid {
+            img {
+                margin-left: -952px;
+            }
+        }
+    }
+    .founded {
+        h1 {
+            font-size: 110px;
+            span {
+                top: 110px;
+                font-size: 50px;
+            }
+        }
+    }
+    .partners {
+        padding-bottom: 70px;
+        h1 {
+            margin-bottom: 70px;
+        }
+        .partners-partner {
+            width: 33.33%;
+            text-align: center;
+            &:nth-child(n+4) {
+                width: 50%;
+                margin-top: 55px;
+            }
+        }
+    }
+    #contact {
+        .col-lg-12 {
+            padding: 0 6px;
+        }
+        form {
+            .col-md-6 {
+                padding: 0 15px;
+                width: 50%;
+                float: left;
+                input, textarea {
+                    width: 100%;
+                }
+            }
+        }
+        .send-button, .contact-address {
+            float: left;
+        }
+        .send-button {
+            width: 60%;
+            button.btn-submit {
+                margin-left: 0;
+                float: right;
+            }
+        }
+        .contact-address {
+            width: 40%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .founded {
+        padding-top: 145px;
+        h1 {
+            font-size: 70px;
+        }
+    }
+    .partners {
+        h1 {
+            margin-bottom: 0;
+        }
+        .partners-partner {
+            width: 100%;
+            margin-top: 45px;
+            padding: 0;
+            &:nth-child(n+4) {
+                width: 100%;
+                margin-top: 45px;
+            }
+        }
+    }
+    .border-divider-orange {
+        top: -2px;
+    }
+    .technology, .believe {
+        .container {
+            padding: 0 20px;
+        }
+    }
+    #contact {
+        padding-bottom: 170px;
+        .col-lg-12 {
+            padding: 0 35px;
+        }
+        form {
+            .col-md-6 {
+                padding: 0;
+                width: 100%;
+                float: none;
+                input, textarea {
+                    width: 100%;
+                }
+            }
+        }
+        .send-button {
+            padding-top: 50px;
+            width: 100%;
+            button.btn-submit {
+                margin-left: 0;
+                float: none;
+            }
+        }
+        .contact-address {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .founded {
+        h1 {
+            font-size: 50px;
+            span {
+                display: none;
+            }
+        }
+    }
+    #contact {
+        padding-bottom: 130px;
+    }
+}
